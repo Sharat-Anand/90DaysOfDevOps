@@ -25,3 +25,25 @@ cat /etc/hostname  ---displays the unique network name assigned to your Linux sy
 Check your home directory
 ls -la ~ ---list aal hidden file but ~ is used to access home directory from anywhere
 
+# Scenario 1
+  systemctl status myapp  ----Check the status of myapp<br>
+  systemctl is-enabled myapp  --is system enabled<br>
+  sudo journalid -u myapp -e --no-pager   --check the log file in chronological order<br>
+  sudo ss -tulpn -- Check other service (like Apache or Nginx) already grabbed the port myapp needs<br>
+
+ # Scenario 2
+ htop --to see memory usage
+ ps aux --sort=-pcpu | head -n 5 -- (-pcpu) arrange in decending and apply head or remove minus and apply tail<br>
+
+  # Scenario 3
+  systemctl status docker  ---status of docker <br>
+  journalctl -u docker -n 50 ---chek log file<br>
+  journalctl -u docker -f --follow log in real time<br>
+
+  # Scenario 4
+ ls -l home/user/backup.sh --to check the permission<br>
+ chmod a+x home/user/backup.sh --gives permission to execute to all<br>
+ ls -l home/user/backup.sh  --verify all cmd  has r-xr-xr-x permission<br>
+ (or) chmod 755 will work --based on number system but it has all the group<br>
+
+  
