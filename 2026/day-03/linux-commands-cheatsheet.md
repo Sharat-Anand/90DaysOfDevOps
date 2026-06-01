@@ -18,8 +18,8 @@ sudo addgroup ggg ---making group for user<br>
 sudo gpasswd -a xxx ggg   ---adding user inside group. here xxx is added in group ggg along **with permission** gets added<br>
 sudo gpasswd -d xxx ggg   ---To remove the user from that group and revoke their permissions. Restart with newgrp current user<br>
 sudo usermod -aG docker ubuntu ---Adding an Ubuntu User to the docker Group to **avoid sudo** and have permissions<br>
-sudo chown ggg filename.txt ---change the owner of the file from ubuntu to other user<br>
-sudo chgrp xxx filename.txt --change group name<br>
+sudo chown ggg filename.txt ---change the individual owner of the file from ubuntu to other user only valid for individual<br>
+sudo chgrp xxx filename.txt --change group owner can be done with chown (:) as well<br>
 # File System
 Read (cat)<br>
 Write (vim/nano)<br>
