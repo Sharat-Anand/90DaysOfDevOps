@@ -7,11 +7,11 @@ journalctl -u nginx/docker ---- to show all logs of an individual process<br>
 
 # User Management
 whoami  ---- shoes which user is active<br>
-sudo adduser -m xxx --- Adds user and made directory using -m (Simialr to windows switching)<br>
+sudo adduser xxx --- Adds user and made directory automatically <br>
 sudo passwd xxx --- set up password for login<br>
 su xxx --- command to enter inside user giving password (opens black bash)<br>
 which bash --- which bash currently am i using (usually coloured) gives path<br>
-sudo useradd -m yyy -s usr/bin/bash --- to make bash similar to **older coloured style**<br>
+sudo useradd -m yyy -s usr/bin/bash --- to make bash similar to **older coloured style** and using -m (Simialr to windows switching)<br>
 cd / > cd home --- ls -l gives list of all users<br>
 cat /etc/group --- shows all the user group<br>
 sudo addgroup ggg ---making group for user<br>
