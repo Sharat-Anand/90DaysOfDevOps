@@ -44,6 +44,6 @@ sudo chmod 775 /opt/team-workspace/ ---Set group to project-team, permissions to
 Test by creating file as nairobi <br>
 <img width="567" height="115" alt="image" src="https://github.com/user-attachments/assets/1335d741-09dc-46c5-aea9-b75dbe589196" />
 
-Learning :(both commands are simialr)
-sudo chown :project-team ubuntu 
-sudo chgrp project-team ubuntu
+Learning :(both commands are simialr)<br>
+sudo chown :project-team ubuntu<br>
+sudo chgrp project-team ubuntu<br>
