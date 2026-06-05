@@ -88,6 +88,20 @@ dig google.com ---The modern highly detailed, showing exact server transaction t
  curl -I google.com --Troubleshooting HTTP status codes: Instantly verify if a site returns 200 OK, 301 Redirect, 403 Forbidden, or 500 Server Error.<br>
  Analyzing Security & Server Software (Footprinting)<br>
   Verifying Cache and Content Types - It tells you what kind of file is sitting at the URL via the content-type <br>
+
+  +-----------------------+--------------------+---------------------------------------------------+
+
+| COMMAND               | TROUBLESHOOT LAYER | BEST USED FOR                                     |
++-----------------------+--------------------+---------------------------------------------------+
+
+| nc -zv localhost      | Transport (TCP)    | ANY port (SSH, MySQL, Redis). Just tests if the   |
+|                       |                    | application door is open or closed.               |
++-----------------------+--------------------+---------------------------------------------------+
+
+| curl -I http://       | Application (HTTP) | ONLY Web/API ports (80, 443, 8080). Tests if the  |
+|                       |                    | web software is responding correctly.             |
++-----------------------+--------------------+---------------------------------------------------+
+
 <img width="1451" height="327" alt="image" src="https://github.com/user-attachments/assets/b0ac0eb7-7cbd-405c-bfb3-bf096e2bbed9" />
 
 netstat -an | head --(new is ss tulpn)troubleshooting pipeline used to check the very first few lines of your system's active network connections.<br>
